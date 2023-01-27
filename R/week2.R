@@ -7,3 +7,4 @@ rt_df$gender<- factor(rt_df$gender, ordered = FALSE, levels = c("M", "F", "N"), 
 mean_rt <- mean(rt_df$rt)
 rt_f_df <- subset(rt_df, subset = rt_df$gender == "Female")
 hist(rt_f_df$rt)
+datasets <- list(rt_df, rt_f_df)
